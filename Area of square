@@ -10,10 +10,10 @@ int main() {
     printf("area is %f",Area);
     return 0;
 } 
-enter side
-5.25
-area is 27.562500
+// enter side
+// 5.25
+// area is 27.562500
 
-enter side
--5
-area is 25.000000
+// enter side
+// -5
+// area is 25.000000

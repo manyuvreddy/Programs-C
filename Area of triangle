@@ -14,14 +14,14 @@ int main() {
     printf("length or breadth might be negative, enter positive numbers");
     return 0;
 }
-enter height
-5
-enter breadth
-4
-area is 10.000000
+// enter height
+// 5
+// enter breadth
+// 4
+// area is 10.000000
 
-enter height
--0
-enter breadth
--4
-area is 0.000000
+// enter height
+// -0
+// enter breadth
+// -4
+// area is 0.000000
