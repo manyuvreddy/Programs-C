@@ -1,4 +1,4 @@
-// finding area of circle wih if function
+    // finding area of circle wih if function
 #include <stdio.h>
 #define pi 3.1415
 int main() {
