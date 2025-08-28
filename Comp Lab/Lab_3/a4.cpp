@@ -9,12 +9,12 @@ int main()
     cout<<"number of terms in series is ";
     cin>>n;
     sum=0;
-    for(i;i<=n;i++)
+    for(i=1;i<=n;i++)
     {
         x=(z-1)/9;
         sum=sum+x;
-        cout<<sum<<endl;
         z=10*z;
     }
+    cout<<sum<<endl;
 return 0;
 }
