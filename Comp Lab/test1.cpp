@@ -9,5 +9,5 @@ int main()
     //y=4;
     z=x/y;
     cout<<z<<endl;
-    return 0;
+return 0;
 }
