@@ -1,3 +1,4 @@
+//program to print given number in reverse order
 #include<iostream>
 using namespace std;
 int main()

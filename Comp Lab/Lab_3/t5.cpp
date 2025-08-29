@@ -1,3 +1,4 @@
+//program to find sum of given numbers' digits
 #include<iostream>
 using namespace std;
 int main()
