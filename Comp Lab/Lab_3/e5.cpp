@@ -18,23 +18,24 @@ void prime(int x)
       }
     }
   if(s==1){
-    cout<<"yes, "<<x<<" is prime"<<endl;
+    //cout<<"yes, "<<x<<" is prime"<<endl;
+    cout<<x<<endl;
     }
   else if(s==0){
-    cout<<"no, "<<x<<" is not prime"<<endl;
+    //cout<<"no, "<<x<<" is not prime"<<endl;
     }
   }
 
   else
   {
-    cout<<"no, "<<x<<" is not prime"<<endl;
+    //cout<<"no, "<<x<<" is not prime"<<endl;
   }
 }
 
 int main()
 {
     int i,n;
-    cout<<"max number to be checked, n = "<<endl;
+    cout<<"max number to be checked, n = ";
     cin>>n;
     for(i=1;i<=n;i++)
     {
