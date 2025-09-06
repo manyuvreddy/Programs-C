@@ -1,0 +1,26 @@
+Thermodynamics
+                                                                𝜕
+w = p*dV --(1)
+q-w = dU
+q = dU + pdV --(2)
+H = U + PV --(3)
+Cv = 𝜕U/𝜕T |V
+Cp = 𝜕H/𝜕T |P
+for ideal gases 𝜕U/𝜕V = 0
+
+First law:
+
+u=f(t,v)
+dU = (𝜕U/𝜕T)*dT|V + (𝜕U/𝜕V)*dV|T        // for ideal gases 𝜕U/𝜕V = 0
+--> q = (𝜕U/𝜕T)*dT|V + {p+(𝜕U/𝜕V)|T}*dV     // Cv = 𝜕U/𝜕T |V
+
+--> first law for ideal gas : q= n*Cv*dT + P*dV
+or : q = (𝜕U/𝜕T)*dT|V + {p+(𝜕U/𝜕V)|T}*dV
+
+H=U+PV  //enthalpy(H) is sum of internal energy and work done to establish volume at certain pressure
+dH = q + VdP (differentiating and substituting (2))         // also, enthalpy at constant pressure is heat supplied at constant pressure
+hence q/𝜕T|P = 𝜕H/𝜕T | P = Cp
+Cp-Cv = 𝜕(H=U+PV)/𝜕T |P - 𝜕U/𝜕T | V
+𝜕U/𝜕T |P = 𝜕U/𝜕T |V + 𝜕U/𝜕V |T * 𝜕V/𝜕T |P
+Cp-Cv = (𝜕V/𝜕T |P) * (P + 𝜕U/𝜕V |T) //but for ideal gas du/dv|t is 0
+so Cp-Cv=R

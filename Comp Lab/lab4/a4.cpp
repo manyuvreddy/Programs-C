@@ -21,7 +21,7 @@ return z;
 int ith_line(int n, int i)
 {
     int j;
-    for(j=0;j<n;j++){
+    for(j=1;j<n;j++){
         cout<<" ";
     }
     for(j=1;j<=i+1;j++){
