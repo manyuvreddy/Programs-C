@@ -25,16 +25,42 @@ bool kaprekar(int n)
 return statement;
 }
 
+bool isprime(int i)
+{
+    int j,r;
+    bool statement;
+    statement=true;
+    if(i<2){
+        statement=false;
+    }
+    else{
+        for(j=2;j<i;j++){
+            r=i%j;
+            if(r==0){
+                statement=false;
+                break;
+            }
+        }
+    }
+return statement;
+}
+
 int main()
 {
     int n,i;
+    bool a;
     cout<<"n = ";
     cin>>n;
-    for(i=1;i<=n;i++)
+    if(kaprekar(n)==1)
     {
-        if(kaprekar(i)==true){
-            cout<<i<<" yes"<<endl;
+        for(i=1;i<=n;i++){
+            if(isprime(i)==1){
+                cout<<i<<endl;
+            }
         }
+    }
+    else{
+        cout<<n<<" is not a kaprekar number"<<endl;
     }
 return 0;
 }
