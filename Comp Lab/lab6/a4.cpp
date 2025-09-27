@@ -51,13 +51,10 @@ int main()
                 s[100-1-i]=s[100-1-i]+sum/10;
             }
         }
-                
-        for(i=0;s[i]==0;i++){}
-        if(i!=101)
-            for(i;i<101;i++)
-                cout<<s[i];
-        else if(i==101)
-            cout<<0;
+        
+        for(i=0;s[i]==0 && i<=99;i++){}//cout<<i<<" ";}
+        for(i;i<=100;i++)
+            cout<<s[i];
         cout<<endl;
     }
     return 0;
