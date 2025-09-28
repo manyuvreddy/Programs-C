@@ -52,7 +52,7 @@ int main()
             }
         }
         
-        for(i=0;s[i]==0 && i<=99;i++){}//cout<<i<<" ";}
+        for(i=0;s[i]==0 && i<=99;i++){}
         for(i;i<=100;i++)
             cout<<s[i];
         cout<<endl;
