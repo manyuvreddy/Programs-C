@@ -1,6 +1,34 @@
-// generate a magic square of order n(odd)
 #include<iostream>
 using namespace std;
+
+// int mod(int n, int r)//n%r
+// {
+//     if(n>=0)
+//         return n%r;
+//     else
+//         return n%r+n;
+// }
+
+// void place_and_move(int a[][100], int n, int& r, int& c, int i)
+// {
+//     //a[y][x]
+//     int x, y;
+//     y=mod(r, n);
+//     x=mod(c, n);
+
+//     a[y][x]=i;
+//     if(a[y-1][x+1]==0)
+//     {
+//         r--;
+//         c++;
+//     }
+//     else
+//     {
+//         r++;
+//     }
+// }
+
+//i dont know why the above functions dont work while the one below does
 
 void place(int a[][100], int n, int& r, int& c, int i)
 {

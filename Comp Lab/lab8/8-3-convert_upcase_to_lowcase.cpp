@@ -6,7 +6,7 @@ void convert(char a[][100], int row)
 {
 	if(a[row][0]>='a' && a[row][0]<='z')
 		a[row][0]-=32;
-	else if(a[row][0]>='A' && [row][0]<='Z')
+	else if(a[row][0]>='A' && a[row][0]<='Z')
 		a[row][0]+=32;
 }
 
@@ -25,5 +25,4 @@ int main()
 		for(i=0; i<n; i++)
 			cout<<list[i]<<endl;
 	}
-	return 0;
 }
