@@ -23,43 +23,43 @@
 #include <unordered_map>
 
 using namespace std;
-int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int t,k;
+
+int minlength(char a[], char b[])
+{
+    int i, j;
+    for(i=0; a[i]!='\0'; i++){}
+    for(j=0; b[j]!='\0'; j++){}
+    if(i<j)
+        return i;
+    else
+        return j;
+}
+
+int strcompare(char a[], char b[])
+{
+    int i=0;
+    while(i<=minlength(a, b))
+    {
+        if(a[i]>b[i])
+            return -1;
+        else if(a[i]<b[i])
+            return 1;
+        else
+            i++;
+    }
+}
+
+int main()
+{
+    int t;
     cin>>t;
-    for(k=1;k<=t;k++)
+    while(t--)
     {
         char a[128],b[128];
         cin>>a;
         cin>>b;
-        int i,j,v=0;
-        for(i=0;a[i]!='\0' || b[i]!='\0';i++)
-        {
-            if(int(a[i])>int(b[i]))
-            { 
-                v=1;
-                break;
-            }
-            else if(int(a[i])<int(b[i]))
-            {
-                v=-1;
-                break;
-            }
-            else
-                v=0;
-        }
-        for(i=0;a[i]!='\0';i++){}
-        for(j=0;b[j]!='\0';j++){}
-        if(v==0)
-        {
-            if(i>j)
-                v=1;
-            else if(i<j)
-                v=-1;
-            else
-                v=0;
-        }
-        cout<<v<<endl;
+
+        cout<<strcompare(a, b)<<endl;
     }
     return 0;
 }
