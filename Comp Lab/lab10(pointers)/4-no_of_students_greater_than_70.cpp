@@ -18,10 +18,11 @@ int main()
     while(t--)
     {
         int n;
+        int *pn; pn = &n;
         cin>>n;
-        student *list = new student [n];
+        student *list = new student [*pn];
         //list = new student [n];
-        for(int i=0; i<n; i++)
+        for(int i=0; i<*pn; i++)
         {
             cin>>list[i].rollno;
             cin>>list[i].name;
@@ -29,7 +30,7 @@ int main()
         }
 
         int count=0;
-        for(int i=0; i<n; i++)
+        for(int i=0; i<*pn; i++)
         {
             if(list[i].marks>=70)
                 count++;
